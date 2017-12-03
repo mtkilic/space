@@ -1,15 +1,14 @@
 from kivy.app import App
-from kivy.uix.widget import Widget
+from kivy.lang import Builder
+from kivy.uix.boxlayout import BoxLayout
 
 
-class PongGame(Widget):
+class MyBox(BoxLayout):
     pass
 
-
-class PongApp(App):
+class SpaceApp(App):
     def build(self):
-        return PongGame()
-
+        return MyBox()
 
 if __name__ == '__main__':
-    PongApp().run()
+    SpaceApp().run()
